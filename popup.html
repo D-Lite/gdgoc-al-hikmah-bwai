@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini Wrapper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Gemini Wrapper</h1>
+
+  <div class="input-group">
+    <label for="apiKey">API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter your Gemini API Key">
+    <button id="saveKey">Save</button>
+  </div>
+
+  <hr>
+
+  <div class="input-group">
+    <label for="promptInput">Your Prompt:</label>
+    <textarea id="promptInput" rows="4" placeholder="e.g., Explain quantum computing in simple terms"></textarea>
+    <button id="askButton">Ask Gemini</button>
+  </div>
+
+  <div id="responseContainer">
+    <pre id="responseOutput">Response will appear here...</pre>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
